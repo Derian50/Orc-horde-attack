@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bfbb66871351e3439e99c84892681c6, type: 3}
+  m_Name: LocalizationData
+  m_EditorClassIdentifier: 
+  _uiLocaleStrings:
+  - LocalizeKey: UI/Perks/Damage
+    Locales:
+      Dict:
+      - key: en
+        value: Damage
+      - key: ru
+        value: "\u0423\u0440\u043E\u043D"
+      - key: tr
+        value: Zarar
+  - LocalizeKey: UI/Perks/AttackSpeed
+    Locales:
+      Dict:
+      - key: en
+        value: Attack Speed
+      - key: ru
+        value: "\u0421\u043A\u043E\u0440\u043E\u0441\u0442\u044C \u0430\u0442\u0430\u043A\u0438"
+      - key: tr
+        value: "Atak h\u0131z\u0131"
+  - LocalizeKey: UI/Perks/MaxHealth
+    Locales:
+      Dict:
+      - key: en
+        value: Maximum health
+      - key: ru
+        value: "\u041C\u0430\u043A\u0441. \u0437\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
+      - key: tr
+        value: "maksimum sa\u011Fl\u0131k"
+  - LocalizeKey: UI/Perks/Regen
+    Locales:
+      Dict:
+      - key: en
+        value: Regeneration
+      - key: ru
+        value: "\u0420\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u044F"
+      - key: tr
+        value: Yenilenme
+  - LocalizeKey: UI/Perks/MoneyCoef
+    Locales:
+      Dict:
+      - key: en
+        value: Money ratio
+      - key: ru
+        value: "\u041A\u043E\u044D\u0444\u0444\u0438\u0446\u0438\u0435\u043D\u0442
+          \u0434\u0435\u043D\u0435\u0433"
+      - key: tr
+        value: "Para oran\u0131"
+  - LocalizeKey: UI/Perks/Multishot
+    Locales:
+      Dict:
+      - key: en
+        value: Multishot
+      - key: ru
+        value: "\u041C\u0443\u043B\u044C\u0442\u0438\u0448\u043E\u0442"
+      - key: tr
+        value: "\xC7oklu at\u0131\u015F"
+  - LocalizeKey: UI/Perks/Coffers
+    Locales:
+      Dict:
+      - key: en
+        value: Coffers
+      - key: ru
+        value: "\u041A\u0430\u0437\u043D\u0430"
+      - key: tr
+        value: Kasalar
+  - LocalizeKey: UI/Perks/Wave
+    Locales:
+      Dict:
+      - key: en
+        value: Wave
+      - key: ru
+        value: "\u0412\u043E\u043B\u043D\u0430"
+      - key: tr
+        value: Dalga
+  - LocalizeKey: UI/Perks/GameOver
+    Locales:
+      Dict:
+      - key: en
+        value: You lose!
+      - key: ru
+        value: "\u0412\u044B \u043F\u0440\u043E\u0438\u0433\u0440\u0430\u043B\u0438!"
+      - key: tr
+        value: Kaybettin!
+  - LocalizeKey: UI/Perks/Restart
+    Locales:
+      Dict:
+      - key: en
+        value: Restart
+      - key: ru
+        value: "\u0417\u0430\u043D\u043E\u0432\u043E"
+      - key: tr
+        value: "Tekrar ba\u015Flat"
+  - LocalizeKey: UI/Perks/Health
+    Locales:
+      Dict:
+      - key: en
+        value: Health
+      - key: ru
+        value: "\u0417\u0434\u043E\u0440\u043E\u0432\u044C\u0435"
+      - key: tr
+        value: "Sa\u011Fl\u0131k"
