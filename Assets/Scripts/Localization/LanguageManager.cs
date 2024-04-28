@@ -24,6 +24,8 @@ public class LanguageManager : MonoBehaviour
         DataManager.LocalizationData.Init();
 
         _currentLocale = System.Enum.Parse<Locales>(YaSDK.GetLanguage());
+        
+        Debug.Log(YaSDK.GetLanguage());
         CurrentLocale = _currentLocale;
         
         
