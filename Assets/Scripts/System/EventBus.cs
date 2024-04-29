@@ -12,5 +12,8 @@ public static class EventBus
     public static Action onGameOver;
 
     public static Action<float> onLootMoney;
+
     public static Action<float> onSpendMoney;
+
+    public static Action<float> onUpgradeMaxHp;
 }

@@ -86,8 +86,9 @@ public class Upgrades : MonoBehaviour
         if (GameStats.instance.money >= GameStats.instance.maxHpCost)
         {
             EventBus.onSpendMoney?.Invoke(GameStats.instance.maxHpCost);
-            GameStats.instance.maxHp += 5;
+            GameStats.instance.maxHp += 10;
             GameStats.instance.maxHpCost *= 1.5f;
+            EventBus.onUpgradeMaxHp?.Invoke(10);
             UpdateUpgradesText();
 
         }

@@ -35,12 +35,19 @@ public class Ballista : MonoBehaviour
     private void OnEnable()
     {
         EventBus.onAttackCastle += TakeDamage;
+        EventBus.onUpgradeMaxHp += UpgradeMaxHp;
     }
     private void OnDisable()
     {
         EventBus.onAttackCastle -= TakeDamage;
+        EventBus.onUpgradeMaxHp += UpgradeMaxHp;
     }
-
+    private void UpgradeMaxHp(float newHp)
+    {
+        _health += newHp;
+        _textHp.text = Math.Round(_health) + "/" + Math.Round(GameStats.instance.maxHp);
+        _healthSlider.value = _health / GameStats.instance.maxHp;
+    }
     private void TakeDamage(float damage)
     {
         _health -= damage;
