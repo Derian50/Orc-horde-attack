@@ -12,6 +12,7 @@ public class UnitSpawner : MonoBehaviour
     [SerializeField] private GameObject[] _spawnCorner;
     private PoolBase<GameObject> _unitPool;
     private const int UNIT_PRELOAD_COUNT = 10;
+    [SerializeField] private const int TIME_BEFORE_FIRST_ATTACK = 10;
     void Awake()
     {
         _unitPool = new PoolBase<GameObject>(Preload, GetAction, ReturnAction, UNIT_PRELOAD_COUNT);
@@ -27,6 +28,7 @@ public class UnitSpawner : MonoBehaviour
     
     IEnumerator SpawnUnit()
     {
+        yield return new WaitForSeconds(TIME_BEFORE_FIRST_ATTACK);
         while (true)
         {
             yield return new WaitForSeconds(_spawnCooldown);
